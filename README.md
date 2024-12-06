@@ -55,7 +55,7 @@ Clone this, then...
 2018-06-08 21:15:56 0 [Note] mysqld: ready for connections.
 Version: '10.3.7-MariaDB-1:10.3.7+maria~jessie'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
 
-}> docker run -it --rm --link my-container mariadb:latest mysql -hmy-container -uroot -proot myexample -e "select * from mytable;"
+}> docker run -it --rm --link my-container mariadb:latest mariadb -hmy-container -uroot -proot myexample -e "select * from mytable;"
 +---------+
 | myfield |
 +---------+
